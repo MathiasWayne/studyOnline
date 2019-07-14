@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: xc-govern-center
+server:
+  port: 50101
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:50101/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 6000
